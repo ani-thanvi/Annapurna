@@ -8,4 +8,4 @@ We are Ambiguous Ninjas ............................You can put little bit infor
 
 
 <span class="credit">Created by <a href="#">Ambiguous Ninjas </a>|</span>
-<span> &copy 2021 All rights reserved.</span>
+<html><span>&copy 2021 All rights reserved.</span></html>
