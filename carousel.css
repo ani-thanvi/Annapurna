@@ -14,7 +14,7 @@ body {
 }
 
 .carousel-item {
-  height: 32rem;
+  height: 40rem;
 }
 .carousel-item > img {
   position: absolute;
