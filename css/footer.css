@@ -131,7 +131,7 @@ footer{
 .right form input{
   height: 35px;
 }
-.right form .btn button{
+.right form .fbtn button{
   height: 40px;
   width: 100%;
   border: none;
@@ -142,7 +142,7 @@ footer{
   cursor:pointer;
   transition: 0.3s;
 }
-.right form .btn button:hover{
+.right form .fbtn button:hover{
   background: #FF0000;
 }
 .bottom center{
