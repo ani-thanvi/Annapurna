@@ -16,6 +16,7 @@ footer{
   bottom: 0px;
   width: 100%;
   background:#FFA500 ;
+  color: black;
 }
 .main-content{
   display: flex;
