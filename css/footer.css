@@ -1,18 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 *{
-  marign: 0;
+  margin: 0;
   padding: 0;
   /* color: #d9d9d9; */
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
 body{
-  widht: 100%;
+  width: 100%;
   height: 100%;
   margin: 0px;
 }
 footer{
-  position: fixed;
+  position: relative;
   bottom: 0px;
   width: 100%;
   background:#FFA500 ;
@@ -87,7 +87,7 @@ footer{
   color: #FF0000;
 }
 .center .content .fas{
-  font-size: : 1.4375rem;
+  font-size: 1.4375rem;
   background: #FFA500;
   height: 45px;
   width: 45px;
@@ -138,7 +138,7 @@ footer{
   background: #FF4500;
   font-size: 1.0625rem;
   font-weight: 500;
-  cursor: pointer;
+  cursor:pointer;
   transition: 0.3s;
 }
 .right form .btn button:hover{
