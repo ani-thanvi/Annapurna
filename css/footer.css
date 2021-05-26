@@ -1,13 +1,20 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 *{
-  marign: 0;
+  margin: 0;
   padding: 0;
   /* color: #d9d9d9; */
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+
+auth gard
+a{
+  margin-left: 10pt;
+  padding: 12pt;
+  font-family: "Poppins", sans-serif;
+}
 body{
-  widht: 100%;
+  width: 100%;
   height: 100%;
   margin: 0px;
 }
@@ -15,8 +22,8 @@ footer{
   position: relative;
   bottom: 0px;
   width: 100%;
-  background:#FFA500 ;
-  color: black;
+  background:#212529 ;
+  color: #fff;
 }
 .main-content{
   display: flex;
@@ -48,7 +55,7 @@ footer{
   content: "";
   height: 2px;
   width: 15%;
-  background:#f12020;
+  background:#04a791;
   top: -10px;
 }
 .left .content p{
@@ -63,7 +70,7 @@ footer{
 .left .content .social a span{
   height: 40px;
   width: 40px;
-  background: #FF8C00;
+  background: #fff;
   color: black;
   line-height: 40px;
   text-align: center;
@@ -72,24 +79,24 @@ footer{
   transition: 0.3s;
 }
 .left .content .social .fa-facebook:hover{
-  background: #FFA500;
+  background: #fff;
   color:#4169E1;
 }
 .left .content .social .fa-twitter:hover{
-  background: #FFA500;
+  background: #FFf;
   color:#00BFFF;
 }
 .left .content .social .fa-instagram:hover{
-  background: #FFA500;
+  background: #FFf;
   color: #C71585;
 }
 .left .content .social .fa-youtube:hover{
-  background: #FFA500;
+  background: #FFf;
   color: #FF0000;
 }
 .center .content .fas{
   font-size: 1.4375rem;
-  background: #FFA500;
+  background: #FFf;
   height: 45px;
   width: 45px;
   line-height: 45px;
@@ -99,7 +106,7 @@ footer{
   cursor: pointer;
 }
 .center .content .fas:hover{
-  background: #FF0000;
+  background: #04a791;
 }
 .center .content .text{
   font-size: 1.0625rem;
@@ -113,7 +120,7 @@ footer{
 .right form .text{
   font-size: 1.0625rem;
   margin-bottom: 2px;
-  color:#A52A2A;
+  color:#04a791;
 }
 .right form .msg{
   margin-top: 10px;
@@ -121,9 +128,9 @@ footer{
 .right form input, .right form textarea{
   width: 100%;
   font-size: 1.0625rem;
-  background: #FF8C00;
+  background: #FFf;
   padding-left: 10px;
-  border: 1px solid #FF4500;
+  border: 1px solid #04a791;
 }
 .right form input:focus, .right form textarea:focus{
   outline-color: #A52A2A;
@@ -136,25 +143,25 @@ footer{
   width: 100%;
   border: none;
   outline:none;
-  background: #FF4500;
+  background: #04a791;
   font-size: 1.0625rem;
   font-weight: 500;
   cursor:pointer;
   transition: 0.3s;
 }
 .right form .fbtn button:hover{
-  background: #FF0000;
+  background: #04a791;
 }
 .bottom center{
   padding: 5px;
   font-size: 0.9375rem;
-  background: #FF8C00;
+  background: #FFf;
 }
 .bottom center span{
   color :#A52A2A;
 }
 .bottom center a{
-  color:#2F4F4F;
+  color:#3a9292;
   text-decoration: none;
 }
 .bottom center a:hover{

@@ -24422,7 +24422,6 @@ li.active > .u-button-style.u-button-style.u-grey-10,
 li.active > .u-button-style.u-button-style.u-grey-10[class*="u-border-"] {
   color: #111111 !important;
   background-color: #cecece !important;
-  border-radius: 10px;
 }
 .u-hover-grey-10:hover,
 .u-hover-grey-10[class*="u-border-"]:hover,
@@ -33390,7 +33389,7 @@ a.u-link.u-text-hover-grey-90:hover {
 
 
 
-
+        
 
         /** common-rules **/
         h1.u-title
@@ -33550,7 +33549,7 @@ a.u-link.u-text-hover-grey-90:hover {
         /*end-media rules*/
         /** publish-rules **/
 
-
+        
 
         /** cms-rules **/
         /*begin-responsive rules*/
@@ -33662,13 +33661,12 @@ a.u-link.u-text-hover-grey-90:hover {
         color: #ffffff;
         }
         /** alt-color-rules **/
-
+    
 
 
 /*end-variables sitestylecss*/
 .u-header {
   background-image: none;
-  background-color: #212529!important
 }
 
 .u-header .u-sheet-1 {
@@ -33750,6 +33748,6 @@ a.u-link.u-text-hover-grey-90:hover {
   }
 }
 
- /*begin-variables base-font-size*/
+ /*begin-variables base-font-size*/ 
  html { font-size: 16px; }
  /*end-variables base-font-size*/

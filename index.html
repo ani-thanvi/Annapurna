@@ -31,20 +31,45 @@
   </head>
   <body>
     
-    <div class="Navbar">
-      <!--<nav class="navbar navbar-light" style="background-color: #FFA500;">-->
-         <nav class="navbar navbar-dark bg-dark" >
-           <a class="nav-link" style="color: #f8f1f1" href="#/home"><img src="images/annapurna(white)-crop.png" height=50px widht=50px></a>
-             <a class="navbar-brand mx-a">Annapurna</a>
-           <a class="navbar-brand mx-auto" href="#"></a>
-           <a href="index.html"class="nav-link" style="color: #f8f1f1" >Home</a>
-           <a href="shared/explore.html" class="nav-link" style="color: #f8f1f1" >Explore</a>
-           <a href="shared/features.html" class="nav-link" style="color: #f8f1f1" >Features</a>
-           <a href="shared/login.html" class="nav-link" style="color: #f8f1f1" >Login</a>
-           <a href="shared/login.html"class="nav-link" style="color: #f8f1f1" >Sign Up</a>
-       </nav>
-     </div>
-    </div>
+    
+<div class="Navbar">
+  <!--<nav class="navbar navbar-light" style="background-color: #FFA500;">-->
+     <nav class="navbar navbar-dark bg-dark" >
+       <a class="nav-link" style="color: #f8f1f1" href="./index.html"><img src="../assets/images/annapurna(white)-crop.png" height=50px widht=50px></a>
+         <a class="navbar-brand mx-a">Annapurna</a>
+       <a class="navbar-brand mx-auto" href="#"></a>
+       <a class="nav-link" style="color: #f8f1f1" href="#/home">Home</a>
+       <a class="nav-link" style="color: #f8f1f1" [routerLink]="['emergency']">Explore</a>
+       <a class="nav-link" style="color: #f8f1f1" [routerLink]="['features']">Features</a>
+       <a class="nav-link  open-modal" data-toggle="modal" data-target="#exampleModalCenterUSAD" style="color: #f8f1f1" [routerLink]="['home']">Login</a>
+       <div class="modal fade" id="exampleModalCenterUSAD" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Are you a?</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body text-center ">
+              <a type="button"  class="btn btn-primary mr-5" [routerLink]="['login']">User</a>
+              <a type="button"  class="btn btn-success ml-5" [routerLink]="['adminsignup']">Admin</a>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+       <a  class="nav-link" style="color: #f8f1f1" [routerLink]="['signup']">Sign Up</a>
+       <a class="nav-link" style="color: #f8f1f1" [routerLink]="['profile']">Profile</a>
+       <a class="nav-link" style="color: #f8f1f1" [routerLink]="['view']">Feedback</a>
+       
+   </nav>
+  </div>
+  
+   
     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -294,10 +319,10 @@
           <div class="content">
             <p>We at Anapurna are here to fill your bellies as you crave for delicious food. We also provide food from home kitchens or the cloud kitchens. Delivery from your nearby restaurants at yor doorstps, free healthy and nutritious food for covid positive patients during the hard times from the verified kitchens to your doorsteps <strong>5 members</strong> namely: <b><em>Vaibhav Sharma</em>, <em>Raghav Sharma</em>, <em>Anirudhi Thanvi</em>, <em>Rishabh Jain</em> & <em>Aman Agarwal</em> headed by our mentor <em>Mr. Venkat Chikkanti</em></b>.....................Thank you!</p>
             <div class="social">
-              <a href="#"><span class="fab fa-facebook"></span></a>
-              <a href="#"><span class="fab fa-twitter"></span></a>
-              <a href="#"><span class="fab fa-instagram"></span></a>
-              <a href="#"><span class="fab fa-youtube"></span></a>
+              <a href="#"><span class="fa fa-facebook"></span></a>
+              <a href="#"><span class="fa fa-twitter"></span></a>
+              <a href="#"><span class="fa fa-instagram"></span></a>
+              <a href="#"><span class="fa fa-youtube"></span></a>
             </div>
           </div>
         </div>
@@ -305,15 +330,15 @@
           <h2>Address</h2>
           <div class="content">
             <div class="place">
-              <span class="fas fa-map-marker-alt"></span>
+              <span class="fa fa-map-marker-alt"></span>
               <span class="text">Bambala, Sukhpuria, Sitapura, Jaipur</span>
             </div>
             <div class="phone">
-              <span class="fas fa-phone-alt"></span>
+              <span class="fa fa-phone"></span>
               <span class="text">+91-1234567809</span>
             </div>
             <div class="email">
-              <span class="fas fa-envelope"></span>
+              <span class="fa fa-envelope"></span>
               <span class="text">abc@example.com</span>
             </div>
           </div>
@@ -344,6 +369,7 @@
         </div>
       </div>
     </footer>
+  
   
   </body>
 </html>
