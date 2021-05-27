@@ -1,0 +1,99 @@
+.user-profile {
+	margin: 50px auto;
+	padding-top: 2rem;
+	width: 25em;
+	height: 11em;
+	background: #000;
+	border-radius: 0.3em;
+}
+.featurette-divider {
+      margin: 3rem;
+    }
+    
+.user-profile .username {
+	margin: auto;
+	margin-top: -4.4em;
+	margin-left: 5.8em;
+	color: #12adad;
+	font-size: 1.53em;
+	font-family: "Coda", sans-serif;
+	font-weight: bold;
+}
+.user-profile .bio {
+	margin: auto;
+	display: inline-block;
+	margin-left: 10.43em;
+	color: #e76043;
+	font-size: 0.87em;
+	font-family: "varela round", sans-serif;
+}
+.user-profile > .description {
+	margin: auto;
+	margin-top: 1.35em;
+	margin-right: 4.43em;
+	width: 14em;
+	color: rgb(207, 204, 204);
+	font-size: 0.87em;
+	font-family: "varela round", sans-serif;
+}
+.user-profile > img.avatar {
+	padding: 0.7em;
+	margin-left: 0.3em;
+	margin-top: 0.3em;
+	height: 6.23em;
+	width: 6.23em;
+	border-radius: 18em;
+}
+
+.user-profile ul.data {
+	margin: 2em auto;
+	height: 3.7em;
+	background: #12adad;
+	text-align: center;
+	border-radius: 0 0 0.3em 0.3em;
+}
+.user-profile li {
+	margin: 0 auto;
+	padding: 1.3em;
+	width: 33.33334%;
+	display: table-cell;
+	text-align: center;
+}
+
+.flex-box {
+	display: flex;
+	justify-content: space-between;
+}
+.card {
+	margin-right: 20px;
+}
+.card-title {
+	text-align: center;
+	font-size: 20px;
+	padding-bottom: 5px;
+	border-bottom: 2px solid #537979;
+}
+.card-text {
+	font-size: 18px;
+	letter-spacing: 1px;
+}
+.last-ordered {
+	font-style: italic;
+	font-weight: 700;
+	color: #bab8b8;
+}
+
+@media (max-width: 800px) {
+	.flex-box {
+		margin-top: 30px;
+		align-items: center;
+		flex-direction: column;
+	}
+	.card {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.btn {
+		display: block;
+	}
+}

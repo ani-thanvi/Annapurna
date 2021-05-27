@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Annapurna</title>
     <link rel="shortcut icon" type="image/png" href="images/logo.png">
-    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/carousel.css">
     <script src="https://kit.fontawesome.com/02f035939d.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -35,12 +35,12 @@
 <div class="Navbar">
   <!--<nav class="navbar navbar-light" style="background-color: #FFA500;">-->
      <nav class="navbar navbar-dark bg-dark" >
-       <a class="nav-link" style="color: #f8f1f1" href="./index.html"><img src="../assets/images/annapurna(white)-crop.png" height=50px widht=50px></a>
+       <a class="nav-link" style="color: #f8f1f1" href="index.html"><img src="./images/annapurna(white)-crop.png" height=50px widht=50px></a>
          <a class="navbar-brand mx-a">Annapurna</a>
        <a class="navbar-brand mx-auto" href="#"></a>
-       <a class="nav-link" style="color: #f8f1f1" href="#/home">Home</a>
-       <a class="nav-link" style="color: #f8f1f1" [routerLink]="['emergency']">Explore</a>
-       <a class="nav-link" style="color: #f8f1f1" [routerLink]="['features']">Features</a>
+       <a class="nav-link" style="color: #f8f1f1" href="index.html">Home</a>
+       <a class="nav-link" style="color: #f8f1f1" href="shared/covid.html">Explore</a>
+       <a class="nav-link" style="color: #f8f1f1" href="shared/features.html">Features</a>
        <a class="nav-link  open-modal" data-toggle="modal" data-target="#exampleModalCenterUSAD" style="color: #f8f1f1" [routerLink]="['home']">Login</a>
        <div class="modal fade" id="exampleModalCenterUSAD" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered" role="document">
@@ -52,19 +52,18 @@
               </button>
             </div>
             <div class="modal-body text-center ">
-              <a type="button"  class="btn btn-primary mr-5" [routerLink]="['login']">User</a>
-              <a type="button"  class="btn btn-success ml-5" [routerLink]="['adminsignup']">Admin</a>
+              <a type="button"  class="btn btn-primary mr-5" href="shared/login.html">User</a>
+              <a type="button"  class="btn btn-success ml-5" href="shared/admin.html">Admin</a>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              
             </div>
           </div>
         </div>
       </div>
-       <a  class="nav-link" style="color: #f8f1f1" [routerLink]="['signup']">Sign Up</a>
-       <a class="nav-link" style="color: #f8f1f1" [routerLink]="['profile']">Profile</a>
-       <a class="nav-link" style="color: #f8f1f1" [routerLink]="['view']">Feedback</a>
+       <a  class="nav-link" style="color: #f8f1f1" href="shared/login.html">Sign Up</a>
+       <a class="nav-link" style="color: #f8f1f1" href="shared/profile.html">Profile</a>
+       <a class="nav-link" style="color: #f8f1f1" href="./shared/Form.html">Feedback</a>
        
    </nav>
   </div>
@@ -93,7 +92,7 @@
             <div class="carousel-caption text-start">
               <h1 style="color:black">Order food Online for Dine in,<br/> Take away, Home delivery.</h1>
                 <p>&nbsp;</p>
-              <p><a class="btn btn-lg btn-primary" href="cafe/Cafe.html">Discover Restaurants</a></p>
+              <p><a class="btn btn-lg btn-primary" href="./shared/Cafe.html">Discover Restaurants</a></p>
             </div>
           </div>
         </div>
@@ -131,19 +130,45 @@
         <div class="col-lg-4">
           <img class="d-placeholder-img rounded-circle" src="images/Emergency.jpg" alt="" width="140" height="140">
           <h2>Emergency</h2>
-          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+          <p><a class="btn btn-secondary open-modal" data-toggle="modal" data-target="#exampleModalCenter1"  > View details &raquo;</a></p>
+           <!-- Modal -->
+              <div class="modal fade" id="exampleModalCenter1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLongTitle">Emergency</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Are you a covid patient/frontline worker/or a needy, then head over here to explore nearby food NGOs and cloud kitchens.</p>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                      <a type="button"  class="btn btn-info" href="shared/emergency.html" >Explore</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
         </div>
+  
         <div class="col-lg-4">
           <img class="d-placeholder-img rounded-circle" src="images/takeaway.jpeg" alt="" width="140" height="140">
           <h2>Take Away</h2>
-          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+          <p><a class="btn btn-secondary" href="shared/takeaway.html" >View details &raquo;</a></p>
+          
         </div>
         <div class="col-lg-4">
           <img class="d-placeholder-img rounded-circle" src="images/cafe.jpeg" alt="" width="140" height="140">
           <h2>Cafes</h2>
-          <p><a class="btn btn-secondary" href="cafe">View details &raquo;</a></p>
+          <p><a class="btn btn-secondary" href="shared/Cafe.html" >View details &raquo;</a></p>
+                
         </div>
       </div>
+  
+      
+  
       <hr class="featurette-divider">
       <div class="album py-5 bg-light">
         <div class="container">
@@ -151,48 +176,42 @@
           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
             <div class="col">
               <div class="card shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-    
+                <img src="images/sandwich.jpg" alt="" height=225>
                 <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text">Swasthi Restaurants</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary"> <a href="shared/Restaurant.html">View</a></button>
                     </div>
-                    <small class="text-muted">9 mins</small>
+                    <strong>Rs. 200 for 2 person</strong>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-    
+               <img src="images/vadapav.jpg" alt="" height=225>
                 <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text">Pizza Hut</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary"><a href="shared/Restaurant.html">View</a></button>
                     </div>
-                    <small class="text-muted">9 mins</small>
+                    <strong>Rs. 500 for 2 person</strong>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-    
+                 <img src="images/chinese.webp" alt="" height=225>
                 <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text">Bakshi Food Corner   </p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary"><a href="shared/Restaurant.html">View</a></button>
                     </div>
-                    <small class="text-muted">9 mins</small>
+                    <strong>Rs. 500 for 2 person</strong>
                   </div>
                 </div>
               </div>
@@ -200,101 +219,34 @@
     
             <div class="col">
               <div class="card shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-    
+                 <img src="images/burger.webp" alt="" height=225>
                 <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text">Mc Donald's</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary"><a href="shared/Restaurant.html">View</a></button>
+                    
                     </div>
-                    <small class="text-muted">9 mins</small>
+                    <strong>Rs. 180 for 2 person</strong>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-    
+                <img src="images/cake.jpg" height=225 alt="">
                 <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text">Amul Parlor</p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary"><a href="shared/Restaurant.html">View</a></button>
                     </div>
-                    <small class="text-muted">9 mins</small>
+                    <strong>Rs. 220 for 2 person</strong>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col">
-              <div class="card shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-    
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-    
-            <div class="col">
-              <div class="card shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-    
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-    
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-    
-                <div class="card-body">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                    </div>
-                    <small class="text-muted">9 mins</small>
-                  </div>
-                </div>
-              </div>
-            </div>
+           
           </div>
         </div>
       </div>
@@ -307,11 +259,14 @@
           <p class="lead">We at Anapurna are here to fill your bellies as you crave for delicious food. We also provide food from home kitchens or the cloud kitchens. Delivery from your nearby restaurants at yor doorstps, free healthy and nutritious food for covid positive patients during the hard times from the verified kitchens to your doorsteps.</p>
         </div>
         <div class="col-md-5">
-          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/></svg>
-        </div>
+          <img src="images/annapurna.png" alt="" height=500 width=500>
+          </div>
       </div>
     </div>
-    <hr class="featurette-divider">  
+    <hr class="featurette-divider"> 
+
+
+
     <footer>
       <div class="main-content">
         <div class="left box">
